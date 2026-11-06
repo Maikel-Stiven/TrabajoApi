@@ -1,0 +1,16 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!mvnw
+!mvnw.cmd
+
+.classpath
+.project
+.settings/
+.factorypath
+.buildpath
+
+.idea/
+*.iml
+.vscode/
+
+*.log
