@@ -5,7 +5,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mariadb://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:tienda_db}?createDatabaseIfNotExist=true
+    url: jdbc:mariadb://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:tienda_app}?createDatabaseIfNotExist=true
     username: ${DB_USER:root}
     password: ${DB_PASS:root}
     driver-class-name: org.mariadb.jdbc.Driver
@@ -19,4 +19,4 @@ spring:
 
 jwt:
   secret: ${JWT_SECRET:dGhpc0lzQVNlY3JldEtleUZvckpXVENyZWF0aW9uT25seUZvclRlc3Rpbmc=}
-  expiration: 86400000
+  expiration: 600000

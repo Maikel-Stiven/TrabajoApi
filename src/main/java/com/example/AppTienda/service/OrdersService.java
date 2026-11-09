@@ -73,7 +73,7 @@ public class OrdersService {
     }
 
     public List<OrderResponseDTO> getSalesOrders(Integer sellerId) {
-        return ordersRepository.findByProductsSellerId(sellerId).stream()
+        return ordersRepository.findByProductSellerId(sellerId).stream()
                 .map(this::mapToDTO)
                 .collect(Collectors.toList());
     }
